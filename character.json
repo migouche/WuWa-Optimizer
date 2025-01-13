@@ -1,0 +1,56 @@
+{
+    "name": "Spectro Rover", 
+    "base_stats": {
+        "HP": 11400,
+        "ATK": 375,
+        "DEF": 100,
+        "Energy Regen": 10,
+        "Crit. Rate": 5,
+        "Crit. DMG": 150,
+        "Healing Bonus": 0,
+        "Max Energy": 100
+    },
+    "elemental_bonuses": {
+        "Glacio": 0,
+        "Fusion": 0,
+        "Electro": 0,
+        "Aero": 0,
+        "Spectro": 0,
+        "Havoc": 0
+    },
+    "constellations": 0,
+    "talents": {
+        "basic_attack": {
+            "level": 10
+        },
+        "resonance_skill": {
+            "level": 10
+        },
+        "forte_circuit": {
+            "level": 10
+        },
+        "resonance_liberation": {
+            "level": 10
+        },
+        "intro_skill": {
+            "level": 10
+        },
+        "basic_skills": {
+            "left": [
+                true, false 
+            ],
+            "center_left": [
+                true, false 
+            ],
+            "center_right": [
+                true, false 
+            ],
+            "right": [
+                true, false 
+            ]
+        },
+        "inherent_skills": [
+            true, true
+        ]
+    }
+}

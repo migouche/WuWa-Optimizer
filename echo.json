@@ -1,0 +1,11 @@
+{
+    "name": "Name", 
+    "main_stat": "HP%", 
+    "substats": {
+        "HP%": 4.5,
+        "ATK%": 6.0,
+        "HEALING BONUS": 7.6,
+        "CRIT RATE%": 4.4,
+        "CRIT DMG%": 8.5
+    }
+}
