@@ -50,7 +50,7 @@ Actual damage is not calculated, because we only want to optimize the expected h
 + <b>Crit. DMG%</b>
 + <b>Healing Bonus%</b>
 + Elemental Bonuses
-    + ** $${\color{#36b0d0}Glacio DMG Bonus%}$$**
+    + ** $${\color{#36b0d0}\text{Glacio DMG Bonus%}}$$**
     + **<fusion>Fusion DMG Bonus%</fusion>**
     + **<electro>Electro DMG Bonus%</electro>**
     + **<aero>Aero DMGBonus%</aero>**
