@@ -67,7 +67,7 @@ Actual damage is not calculated, because we only want to optimize the expected h
 
 | Stat                  | Rank 2 (LVL 1 - 10) | Rarity 3 (LVL 1 - 15) | Rarity 4 (LVL 1 - 20) | Rarity 5 (LVL 1 - 25) |
 |-----------------------|---------------------|-----------------------|-----------------------|-----------------------|
-| **1-Cost Echo**        |                     |                       |                 pti      |                       |
+| **1-Cost Echo**        |                     |                       |                       |                       |
 | HP%                   | 2.8% - 7.2%         | 3.0% - 10.20%         | 3.4% - 14.2%          | 4.5% - 22.8%          |
 | ATK%                  | 2.2% - 5.7%         | 2.4% - 8.1%           | 2.7% - 11.3%          | 3.6% - 18.0%          |
 | DEF%                  | 2.2% - 5.7%         | 2.4% - 8.1%           | 2.7% - 11.3%          | 3.6% - 18.0%          |
@@ -77,7 +77,7 @@ Actual damage is not calculated, because we only want to optimize the expected h
 | ATK%                  | 3.7% - 9.6%         | 4.0% - 14.0%          | 4.5% - 18.9%          | 6.0% - 30%            |
 | DEF%                  | 4.7% - 12.3%        | 5.0% - 17%            | 5.7% - 23.9%          | 7.6% - 38%            |
 | <glacio>Glacio DMG</glacio> Bonus       | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
-| <fusion>Fusion DMG</fusion> Bonus       | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
+| ${\color{#c82a4b}\text{Fusion DMG}}$ Bonus       | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
 | <electro>Electro DMG</electro> Bonus      | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
 | <aero>Aero DMG</aero> Bonus         | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
 | <spectro>Spectro DMG</spectro> Bonus      | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
@@ -184,7 +184,7 @@ if the echo is not level 25 and/or there are missing roles, they will be left em
 | ![Frosty Resolve][frosty-resolve] **Frosty Resolve**  | Resonance Skill DMG +12% | Casting Resonance Skill grants <glacio>22.5% Glacio DMG</glacio> Bonus for 15s. Casting Resonance Liberation increases Resonance Skill DMG by 18% for 5s. Stacks up to 2 times. |
 | ![Lingering Tunes][lingering-tunes] **Lingering Tunes** | ATK +10% | While on field, ATK increases by 5% every 1.5s, stacking up to 4 times. Outro Skill DMG +60%. |
 | ![Midnight Veil][midnight-veil] **Midnight Veil**   | <havoc>Havoc DMG +10%</havoc> | Triggering Outro Skill deals additional <havoc>480% Havoc DMG</havoc> to surrounding enemies and grants incoming Resonator <havoc>15% Havoc DMG</havoc> Bonus for 15s. |
-| ![Molten Rift][molten-rift] **Molten Rift**     | <fusion>Fusion DMG +10%</fusion> | <fusion>Fusion DMG +30%</fusion> for 15s after releasing Resonance Skill. |
+| ![Molten Rift][molten-rift] **Molten Rift**     | ${\color{#c82a4b}\text{Fusion DMG +10%}}$ | ${\color{#c82a4b}\text{Fusion DMG +30%}}$ for 15s after releasing Resonance Skill. |
 | ![Moonlit Clouds][moonlit-clouds] **Moonlit Clouds**  | Energy Regen +10% | After using Outro Skill, increases next Resonator's ATK by 22.5% for 15s. |
 | ![Rejuvenating Glow][rejuvenating-glow] **Rejuvenating Glow** | Healing Bonus +10% | Healing allies increases all party members' ATK by 15% for 30s. |
 | ![Sierra Gale][sierra-gale] **Sierra Gale**     | <aero>Aero DMG +10%</aero> | <aero>Aero DMG +30%</aero> for 15s after releasing Intro Skill. |
