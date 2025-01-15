@@ -6,6 +6,7 @@
 
 typedef struct {
     char* name;
+    int element;
     int base_stats[8];
     int elemental_bonuses[6];
     int constellations;
@@ -38,6 +39,16 @@ int stat_string_to_id(const char* stat) {
     return -1; // Unknown stat
 }
 
+int string_to_element(const char* element){
+    if (strcmp(element, "Glacio") == 0) return 0;
+    if (strcmp(element, "Fusion") == 0) return 1;
+    if (strcmp(element, "Electro") == 0) return 2;
+    if (strcmp(element, "Aero") == 0) return 3;
+    if (strcmp(element, "Spectro") == 0) return 4;
+    if (strcmp(element, "Havoc") == 0) return 5;
+    return -1; // Unknown element
+}
+
 Character json_to_character(char* filename) {
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
@@ -61,6 +72,7 @@ Character json_to_character(char* filename) {
 
     Character character;
     character.name = strdup(cJSON_GetObjectItem(json, "name")->valuestring);
+    character.element = string_to_element(cJSON_GetObjectItem(json, "element")->valuestring);
 
     cJSON* base_stats = cJSON_GetObjectItem(json, "base_stats");
     character.base_stats[0] = cJSON_GetObjectItem(base_stats, "HP")->valueint;
@@ -111,7 +123,7 @@ void free_character(Character* character) {
 
 int main() {
     Character character = json_to_character("character.json");
-    printf("Name: %s\n", character.name);
+    printf("Name: %s, element: %d\n", character.name, character.element);
     printf("Base Stats: HP=%d, ATK=%d, DEF=%d, Energy Regen=%d, Crit. Rate=%d, Crit. DMG=%d, Healing Bonus=%d, Max Energy=%d\n",
            character.base_stats[0], character.base_stats[1], character.base_stats[2], character.base_stats[3],
            character.base_stats[4], character.base_stats[5], character.base_stats[6], character.base_stats[7]);

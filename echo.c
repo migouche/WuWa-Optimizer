@@ -30,6 +30,7 @@
 
 typedef struct {
     char* name;
+    int element;
 
     int main_stat;
 

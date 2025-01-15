@@ -1,5 +1,6 @@
 {
-    "name": "Spectro Rover", 
+    "name": "Spectro Rover",
+    "element": "Spectro",
     "base_stats": {
         "HP": 11400,
         "ATK": 375,
