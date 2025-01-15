@@ -22,7 +22,7 @@
 
 
 Skill Hit:
-$${\text{skill\_hit} = \text{char\_atk} \times \text{char\_skill\_mult} \times \text{skill\_scaling\_bonus}}$$
+$`\text{skill\_hit} = \text{char\_atk} \times \text{char\_skill\_mult} \times \text{skill\_scaling\_bonus}`$
 
 Expected Hit:
 $$ \text{expected\_hit} = \text{skill\_hit} \times (\text{elemental\_dmg\_bonus} + \text{skill\_dmg\_bonus}) \times \text{deepen\_effect} \times (\text{crit\_dmg} \times \text{crit\_rate}) $$
