@@ -37,30 +37,30 @@ Actual damage is not calculated, because we only want to optimize the expected h
 ### All stats
 
 + HP
-    + <b>HP</b>
-    + <b>HP%</b>
+    + **HP**
+    + **HP%**
 + ATK
-    + <b>ATK</b>
-    + <b>ATK%</b>
+    + **ATK**
+    + **ATK%**
 + DEF
-    + <b>DEF</b>
-    + <b>DEF%</b>
-+ <b>Energy Regen%</b>
-+ <b>Crit. Rate%</b>
-+ <b>Crit. DMG%</b>
-+ <b>Healing Bonus%</b>
+    + **DEF**
+    + **DEF%**
++ **Energy Regen%**
++ **Crit. Rate%**
++ **Crit. DMG%**
++ **Healing Bonus%**
 + Elemental Bonuses
-    + $${\color{#36b0d0}\textbf{Glacio DMG Bonus%}}$$
-    + $${\color{#c82a4b}\textbf{Fusion DMG Bonus%}}$$
-    + $${\color{#aa35b5}\textbf{Electro DMG Bonus%}}$$
-    + $${\color{#31c9a1}\textbf{Aero DMG Bonus%}}$$
-    + $${\color{#b8a81e}\textbf{Spectro DMG Bonus%}}$$
-    + $${\color{#971654}\textbf{Havoc DMG Bonus%}}$$
+    + $${\color{#36b0d0}\textbf{Glacio DMG Bonus\\%}}$$
+    + $${\color{#c82a4b}\textbf{Fusion DMG Bonus\\%}}$$
+    + $${\color{#aa35b5}\textbf{Electro DMG Bonus\\%}}$$
+    + $${\color{#31c9a1}\textbf{Aero DMG Bonus\\%}}$$
+    + $${\color{#b8a81e}\textbf{Spectro DMG Bonus\\%}}$$
+    + $${\color{#971654}\textbf{Havoc DMG Bonus\\%}}$$
 + Dmg Bonuses
-    + <b>Basic Attack DMG Bonus%</b>
-    + <b>Heavy Attack DMG Bonus%</b>
-    + <b>Resonance Skill DMG Bonus%</b>
-    + <b>Resonance Liberation DMG Bonus%</b>
+    + **Basic Attack DMG Bonus%**
+    + **Heavy Attack DMG Bonus%**
+    + **Resonance Skill DMG Bonus%**
+    + **Resonance Liberation DMG Bonus%**
 
 ### Main stats
 
@@ -77,7 +77,7 @@ Actual damage is not calculated, because we only want to optimize the expected h
 | ATK%                  | 3.7% - 9.6%         | 4.0% - 14.0%          | 4.5% - 18.9%          | 6.0% - 30%            |
 | DEF%                  | 4.7% - 12.3%        | 5.0% - 17%            | 5.7% - 23.9%          | 7.6% - 38%            |
 | ${\color{#36b0d0}\text{Glacio DMG Bonus}}$       | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
-| $${\color{#c82a4b}\text{Fusion DMG Bonus}}$$        | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
+| ${\color{#c82a4b}\text{Fusion DMG Bonus}}$       | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
 | ${\color{#aa35b5}\text{Electro DMG Bonus}}$      | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
 | ${\color{#31c9a1}\text{Aero DMG Bonus}}$         | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
 | ${\color{#b8a81e}\text{Spectro DMG Bonus}}$      | 3.7% - 9.6%         | 4.0% - 14%            | 4.5% - 18.9%          | 6.0% - 30%            |
@@ -177,20 +177,20 @@ if the echo is not level 25 and/or there are missing roles, they will be left em
 
 | Sonata Effect      | 2-Piece Bonus                                                                 | 5-Piece Bonus                                                                 |
 |--------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| ![Celestial Light][celestial-light] **Celestial Light** |${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | ${\color{#b8a81e}\text{Spectro DMG +30%}}$ for 15s after releasing Intro Skill.                         |
-| ![Empyrean Anthem][empyrean-anthem] **Empyrean Anthem** | Energy Regen +10\% | Increase Resonator's Coordinated Attack DMG by 80%. Upon critical hit, increase active Resonator's ATK by 20% for 4s. |
-| ![Eternal Radiance][eternal-radiance] **Eternal Radiance** | ${\color{#b8a81e}\text{Spectro DMG +10%}}$ | Inflicting Spectro Frazzle increases Crit. Rate by 20% for 15s. Attacking enemies with 10 stacks of Spectro Frazzle grants 15% ${\color{#b8a81e}\text{<spectro>Spectro DMG}}$ </spectro> Bonus for 15s. |
-|![Freezing Frost][freezing-frost] **Freezing Frost** | ${\color{#36b0d0}\text{Glacio DMG +10%}}$ | ${\color{#36b0d0}\text{Glacio DMG +10%}}$ after releasing Basic or Heavy Attack. Stacks up to 3 times, each lasting 15s. |
+| ![Celestial Light][celestial-light] **Celestial Light** |${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | ${\color{#b8a81e}\text{Spectro DMG +30\\%}}$ for 15s after releasing Intro Skill.                         |
+| ![Empyrean Anthem][empyrean-anthem] **Empyrean Anthem** | Energy Regen +10\\% | Increase Resonator's Coordinated Attack DMG by 80%. Upon critical hit, increase active Resonator's ATK by 20% for 4s. |
+| ![Eternal Radiance][eternal-radiance] **Eternal Radiance** | ${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | Inflicting Spectro Frazzle increases Crit. Rate by 20% for 15s. Attacking enemies with 10 stacks of Spectro Frazzle grants 15% ${\color{#b8a81e}\text{<spectro>Spectro DMG}}$ </spectro> Bonus for 15s. |
+|![Freezing Frost][freezing-frost] **Freezing Frost** | ${\color{#36b0d0}\text{Glacio DMG +10\\%}}$ | ${\color{#36b0d0}\text{Glacio DMG +10\\%}}$ after releasing Basic or Heavy Attack. Stacks up to 3 times, each lasting 15s. |
 | ![Frosty Resolve][frosty-resolve] **Frosty Resolve**  | Resonance Skill DMG +12% | Casting Resonance Skill grants ${\color{#36b0d0}\text{22.5% Glacio DMG}}$ Bonus for 15s. Casting Resonance Liberation increases Resonance Skill DMG by 18% for 5s. Stacks up to 2 times. |
 | ![Lingering Tunes][lingering-tunes] **Lingering Tunes** | ATK +10% | While on field, ATK increases by 5% every 1.5s, stacking up to 4 times. Outro Skill DMG +60%. |
-| ![Midnight Veil][midnight-veil] **Midnight Veil**   | ${\color{#971654}\text{Havoc DMG +10%}}$ | Triggering Outro Skill deals additional ${\color{#971654}\text{480% Havoc DMG}}$ to surrounding enemies and grants incoming Resonator ${\color{#971654}\text{15% Havoc DMG}}$ Bonus for 15s. |
-| ![Molten Rift][molten-rift] **Molten Rift**     | ${\color{#c82a4b}\text{Fusion DMG +10%}}$ | ${\color{#c82a4b}\text{Fusion DMG +30%}}$ for 15s after releasing Resonance Skill. |
+| ![Midnight Veil][midnight-veil] **Midnight Veil**   | ${\color{#971654}\text{Havoc DMG +10\\%}}$ | Triggering Outro Skill deals additional ${\color{#971654}\text{480% Havoc DMG}}$ to surrounding enemies and grants incoming Resonator ${\color{#971654}\text{15% Havoc DMG}}$ Bonus for 15s. |
+| ![Molten Rift][molten-rift] **Molten Rift**     | ${\color{#c82a4b}\text{Fusion DMG +10\\%}}$ | ${\color{#c82a4b}\text{Fusion DMG +30\\%}}$ for 15s after releasing Resonance Skill. |
 | ![Moonlit Clouds][moonlit-clouds] **Moonlit Clouds**  | Energy Regen +10% | After using Outro Skill, increases next Resonator's ATK by 22.5% for 15s. |
 | ![Rejuvenating Glow][rejuvenating-glow] **Rejuvenating Glow** | Healing Bonus +10% | Healing allies increases all party members' ATK by 15% for 30s. |
-| ![Sierra Gale][sierra-gale] **Sierra Gale**     | ${\color{#31c9a1}\text{Aero DMG +10%}}$ | ${\color{#31c9a1}\text{Aero DMG +30%}}$ for 15s after releasing Intro Skill. |
-| ![Havoc Eclipse][havoc-eclipse] **Havoc Eclipse** | ${\color{#971654}\text{Havoc DMG +10%}}$ | ${\color{#971654}\text{Havoc DMG +7.5%}}$ after releasing Basic or Heavy Attack. Stacks up to 4 times, each lasting 15s. |
+| ![Sierra Gale][sierra-gale] **Sierra Gale**     | ${\color{#31c9a1}\text{Aero DMG +10\\%}}$ | ${\color{#31c9a1}\text{Aero DMG +30\\%}}$ for 15s after releasing Intro Skill. |
+| ![Havoc Eclipse][havoc-eclipse] **Havoc Eclipse** | ${\color{#971654}\text{Havoc DMG +10\\%}}$ | ${\color{#971654}\text{Havoc DMG +7.5\\%}}$ after releasing Basic or Heavy Attack. Stacks up to 4 times, each lasting 15s. |
 | ![Tidebreaking Courage][tidebreaking-courage] **Tidebreaking Courage** | Energy Regen +10% | Increase Resonator's ATK by 15%. Reaching 250% Energy Regen increases all Attribute DMG by 30% for the Resonator. |
-| ![Void Thunder][void-thunder] **Void Thunder**    | ${\color{#aa35b5}\text{Electro DMG +10%}}$ | ${\color{#aa35b5}\text{Electro DMG +15%}}$ after releasing Heavy Attack or Resonance Skill. Stacks up to 2 times, each lasting 15s. |
+| ![Void Thunder][void-thunder] **Void Thunder**    | ${\color{#aa35b5}\text{Electro DMG +10\\%}}$ | ${\color{#aa35b5}\text{Electro DMG +15\\%}}$ after releasing Heavy Attack or Resonance Skill. Stacks up to 2 times, each lasting 15s. |
 
 
 ### Characters
