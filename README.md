@@ -177,7 +177,7 @@ if the echo is not level 25 and/or there are missing roles, they will be left em
 
 | Sonata Effect      | 2-Piece Bonus                                                                 | 5-Piece Bonus                                                                 |
 |--------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| ![Celestial Light][celestial-light] **Celestial Light** |${\color{#b8a81e}\text{Spectro DMG +10\%}}$ | ${\color{#b8a81e}\text{Spectro DMG +30%}}$ for 15s after releasing Intro Skill.                         |
+| ![Celestial Light][celestial-light] **Celestial Light** |${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | ${\color{#b8a81e}\text{Spectro DMG +30%}}$ for 15s after releasing Intro Skill.                         |
 | ![Empyrean Anthem][empyrean-anthem] **Empyrean Anthem** | Energy Regen +10\% | Increase Resonator's Coordinated Attack DMG by 80%. Upon critical hit, increase active Resonator's ATK by 20% for 4s. |
 | ![Eternal Radiance][eternal-radiance] **Eternal Radiance** | ${\color{#b8a81e}\text{Spectro DMG +10%}}$ | Inflicting Spectro Frazzle increases Crit. Rate by 20% for 15s. Attacking enemies with 10 stacks of Spectro Frazzle grants 15% ${\color{#b8a81e}\text{<spectro>Spectro DMG}}$ </spectro> Bonus for 15s. |
 |![Freezing Frost][freezing-frost] **Freezing Frost** | ${\color{#36b0d0}\text{Glacio DMG +10%}}$ | ${\color{#36b0d0}\text{Glacio DMG +10%}}$ after releasing Basic or Heavy Attack. Stacks up to 3 times, each lasting 15s. |
