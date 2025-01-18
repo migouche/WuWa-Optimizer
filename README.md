@@ -47,6 +47,16 @@ When no stat is specified, the skill scales with ATK. So this skill would have:
 + *char_skill_mult* = 118.80%. (1.188)
 + *skill_scaling_bonus* = 1.0 (We'll talk about this [later](#skill-hit))
 
+![alt text](readme_stuff/skis.png)
+
+In the Shorekeeper's intro skill, her Discernment DMG scales with her HP.  18.26% * 3 HP means 3 hits, but to practical purposes, we can consider it as a single hit with triple the damage, so the skill hit would be:
++ *char_stat* = Shorekeeper's HP
++ *char_skill_mult* = 18.26% * 3 = 54.78% (0.5478)
++ *skill_scaling_bonus* = 1.0 (We'll talk about this [later](#skill-hit))
+
+### Expected Hit
+A hit base damage scaless of teh
+
 
 
 ## Stats
