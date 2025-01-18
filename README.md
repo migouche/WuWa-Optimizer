@@ -32,8 +32,7 @@ Actual Hit:
 actual\_hit = enemy\_defence\_modifier \times enemy\_elemental\_reduction
 ```
 
-
-"e will assume monsters for Sol3 phase 8, in case they have different defence.
+We will assume monsters for Sol3 phase 8, in case they have different defence.
 The optimizer will optimize *actual_hit*, modifying all modifiers according to the characters and sets.
 
 ## Modifiers
@@ -42,6 +41,11 @@ Every skill has a corresponding stat with which it scales and a multiplier that 
 Given Spectro Rover's Resonance skill:
 
 ![rover-resonance-skill](readme_stuff/srrs.png)
+
+When no stat is specified, the skill scales with ATK. So this skill would have:
++ *char_stat* = Rover's ATK
++ *char_skill_mult* = 118.80%. (1.188)
++ *skill_scaling_bonus* = 1.0 (We'll talk about this [later](#skill-hit))
 
 
 
