@@ -16,7 +16,7 @@ $${
 
 
 Skill Hit:
-${\mathnormal{skill\_hit} = \mathnormal{char\_stat} \times \mathnormal{char\_skill\_mult} \times \mathnormal{skill\_scaling\_bonus}}$
+${\mathnormal{skill_hit} = \mathnormal{char\_stat} \times \mathnormal{char\_skill\_mult} \times \mathnormal{skill\_scaling\_bonus}}$
 where *char_stat* is the character's corresponding stat with which the skill scales, see [Skill Hit](#skill-hit)
 
 Expected Hit:
