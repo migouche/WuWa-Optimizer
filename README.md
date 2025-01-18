@@ -28,7 +28,10 @@ expected\_hit = skill\_hit \times (elemental\_dmg\_bonus + skill\_dmg\_bonus) \t
 See the difference between [damage bonuses](#dmg-bonuses) and [deepen effects](#deepen-effects)
 
 Actual Hit:
-${\mathnormal{actual\_hit} = \mathnormal{enemy\_defence\_modifier} \times \mathnormal{enemy\_elemental\_reduction}}$
+```math
+actual\_hit = enemy\_defence\_modifier \times enemy\_elemental\_reduction
+```
+
 
 we will assume monsters for Sol3 phase 8, in case they have different defence.
 The optimizer will optimize Actual hit, modifying all modifiers according to the characters and sets.
