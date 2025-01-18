@@ -16,14 +16,14 @@ $${
 
 
 Skill Hit:
-${\mathnormal{skill\\_hit} = \mathnormal{char\_stat} \times \mathnormal{char\_skill\_mult} \times \mathnormal{skill\_scaling\_bonus}}$
+${\newline\mathnormal{skill\\_hit} = \mathnormal{char\\_stat} \times \mathnormal{char\\_skill\\_mult} \\times \\mathnormal{skill\\_scaling\_bonus}\newline}$
 where *char_stat* is the character's corresponding stat with which the skill scales, see [Skill Hit](#skill-hit)
 
 Expected Hit:
-${\text{expected\_hit} = \text{skill\_hit} \times (\text{elemental\_dmg\_bonus} + \text{skill\_dmg\_bonus}) \times \text{deepen\_effect} \times (\text{crit\_dmg} \times \text{crit\_rate})}$
+${\mathnormal{expected\_hit} = \mathnormal{skill\_hit} \times (\mathnormal{elemental\_dmg\_bonus} + \mathnormal{skill\_dmg\_bonus}) \times \mathnormal{deepen\_effect} \times (\mathnormal{crit\_dmg} \times \mathnormal{crit\_rate})}$
 
 Actual Hit:
-${\text{actual\_hit} = \text{enemy\_defence\_modifier} \times \text{enemy\_elemental\_reduction}}$
+${\mathnormal{actual\_hit} = \mathnormal{enemy\_defence\_modifier} \times \mathnormal{enemy\_elemental\_reduction}}$
 
 we will assume monsters for Sol3 phase 8, in case they have different defence.
 The optimizer will optimize Actual hit, modifying all modifiers according to the characters and sets.
