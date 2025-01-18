@@ -2,33 +2,37 @@
 
 ## Damage calculation
 
-<style>
-    black {color: black;}
-    red {color: red;}
-    green {color: green;}
-    blue {color: blue;}
-    yellow {color: yellow;}
-    purple {color: purple;}
-    orange {color: orange;}
+See [wuwa-damage-calculation-guide](https://wutheringwaves.gg/damage-calculation-guide/)
 
-    fusion {color: #c82a4b;}
-    glacio {color: #36b0d0;}
-    aero {color: #31c9a1;}
-    electro {color: #aa35b5;}
-    spectro {color: #b8a81e;}
-    havoc {color: #971654;}
-</style>
-
+$${
+% colors: 
+% glacio: #36b0d0
+% fusion: #c82a4b
+% electro: #aa35b5
+% aero: #31c9a1
+% spectro: #b8a81e
+% havoc: #971654
+}$$
 
 
 Skill Hit:
-$`\text{skill\_hit} = \text{char\_atk} \times \text{char\_skill\_mult} \times \text{skill\_scaling\_bonus}`$
+${\text{skill\_hit} = \text{char\_stat} \times \text{char\_skill\_mult} \times \text{skill\_scaling\_bonus}}$
+where *char_stat* is the character's corresponding stat with which the skill scales, see [Skill Hit](#skill-hit)
 
 Expected Hit:
-$`\text{expected\_hit} = \text{skill\_hit} \times (\text{elemental\_dmg\_bonus} + \text{skill\_dmg\_bonus}) \times \text{deepen\_effect} \times (\text{crit\_dmg} \times \text{crit\_rate})`$
+${\text{expected\_hit} = \text{skill\_hit} \times (\text{elemental\_dmg\_bonus} + \text{skill\_dmg\_bonus}) \times \text{deepen\_effect} \times (\text{crit\_dmg} \times \text{crit\_rate})}$
 
-Actual damage is not calculated, because we only want to optimize the expected hit, independently of the enemy.
+Actual Hit:
+${\text{actual\_hit} = \text{enemy\_defence\_modifier} \times \text{enemy\_elemental\_reduction}}$
 
+we will assume monsters for Sol3 phase 8, in case they have different defence.
+The optimizer will optimize Actual hit, modifying all modifiers according to the characters and sets.
+
+## Modifiers
+### Skill hit
+Every skill has a corresponding stat with which it scales and a multiplier that is applied to that stat. 
+Given Spectro Rover's Resonance skill:
+![rover-resonance-skill](readme_stuff/srrs.png)
 
 
 
@@ -37,25 +41,25 @@ Actual damage is not calculated, because we only want to optimize the expected h
 ### All stats
 
 + HP
-    + **HP**
-    + **HP%**
+    + ***HP***
+    + ***HP%***
 + ATK
-    + **ATK**
-    + **ATK%**
+    + ***ATK***
+    + ***ATK%***
 + DEF
-    + **DEF**
-    + **DEF%**
-+ **Energy Regen%**
-+ **Crit. Rate%**
-+ **Crit. DMG%**
-+ **Healing Bonus%**
+    + ***DEF***
+    + ***DEF%***
++ ***Energy Regen%***
++ ***Crit. Rate%***
++ ***Crit. DMG%***
++ ***Healing Bonus%***
 + Elemental Bonuses
-    + $${\color{#36b0d0}\textbf{Glacio DMG Bonus\\%}}$$
-    + $${\color{#c82a4b}\textbf{Fusion DMG Bonus\\%}}$$
-    + $${\color{#aa35b5}\textbf{Electro DMG Bonus\\%}}$$
-    + $${\color{#31c9a1}\textbf{Aero DMG Bonus\\%}}$$
-    + $${\color{#b8a81e}\textbf{Spectro DMG Bonus\\%}}$$
-    + $${\color{#971654}\textbf{Havoc DMG Bonus\\%}}$$
+    + $${\color{#36b0d0}\textbf{Glacio DMG Bonus}}$$
+    + $${\color{#c82a4b}\textbf{Fusion DMG Bonus}}$$
+    + $${\color{#aa35b5}\textbf{Electro DMG Bonus}}$$
+    + $${\color{#31c9a1}\textbf{Aero DMG Bonus}}$$
+    + $${\color{#b8a81e}\textbf{Spectro DMG Bonus}}$$
+    + $${\color{#971654}\textbf{Havoc DMG Bonus}}$$
 + Dmg Bonuses
     + **Basic Attack DMG Bonus%**
     + **Heavy Attack DMG Bonus%**
