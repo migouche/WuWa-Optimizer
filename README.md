@@ -33,13 +33,14 @@ actual\_hit = enemy\_defence\_modifier \times enemy\_elemental\_reduction
 ```
 
 
-we will assume monsters for Sol3 phase 8, in case they have different defence.
-The optimizer will optimize Actual hit, modifying all modifiers according to the characters and sets.
+"e will assume monsters for Sol3 phase 8, in case they have different defence.
+The optimizer will optimize *actual_hit*, modifying all modifiers according to the characters and sets.
 
 ## Modifiers
 ### Skill hit
 Every skill has a corresponding stat with which it scales and a multiplier that is applied to that stat. 
-Given Spectro Rover's Resonance skill:
+Given Spectro Rover's Resonance skill:\
+
 ![rover-resonance-skill](readme_stuff/srrs.png)
 
 
