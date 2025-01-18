@@ -16,10 +16,8 @@ $${
 
 
 Skill Hit:
-${\newline\mathnormal{skill\\_hit} = \mathnormal{char\\_stat} \times \mathnormal{char\\_skill\\_mult} \\times \\mathnormal{skill\\_scaling\_bonus}\newline}$
-
 ```math
-${skill_hit = char_stat \times char_skill_mult \times skill_scaling_bonus}$
+skill\_hit = char_stat \times char_skill_mult \times skill_scaling_bonus
 ```
 where *char_stat* is the character's corresponding stat with which the skill scales, see [Skill Hit](#skill-hit)
 
