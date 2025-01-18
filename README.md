@@ -39,7 +39,7 @@ The optimizer will optimize *actual_hit*, modifying all modifiers according to t
 ## Modifiers
 ### Skill hit
 Every skill has a corresponding stat with which it scales and a multiplier that is applied to that stat. 
-Given Spectro Rover's Resonance skill:\
+Given Spectro Rover's Resonance skill:
 
 ![rover-resonance-skill](readme_stuff/srrs.png)
 
