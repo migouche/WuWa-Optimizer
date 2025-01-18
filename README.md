@@ -17,12 +17,15 @@ $${
 
 Skill Hit:
 ```math
-skill\_hit = char_stat \times char_skill_mult \times skill_scaling_bonus
+skill\_hit = char\_stat \times char\_skill\_mult \times skill\_scaling\_bonus
 ```
 where *char_stat* is the character's corresponding stat with which the skill scales, see [Skill Hit](#skill-hit)
 
 Expected Hit:
-${\mathnormal{expected\_hit} = \mathnormal{skill\_hit} \times (\mathnormal{elemental\_dmg\_bonus} + \mathnormal{skill\_dmg\_bonus}) \times \mathnormal{deepen\_effect} \times (\mathnormal{crit\_dmg} \times \mathnormal{crit\_rate})}$
+```math
+expected\_hit = skill\_hit \times (elemental\_dmg\_bonus + skill\_dmg\_bonus) \times deepen\_effect \times (crit\_dmg \times crit\_rate)
+```
+See the difference between [damage bonuses](#dmg-bonuses) and [deepen effects](#deepen-effects)
 
 Actual Hit:
 ${\mathnormal{actual\_hit} = \mathnormal{enemy\_defence\_modifier} \times \mathnormal{enemy\_elemental\_reduction}}$
