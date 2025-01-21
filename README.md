@@ -2,6 +2,14 @@
 
 ## Damage calculation
 
+### Quick Notes
+Whenever this guide talks about multiplying, it may use a coefficient or a percentage. Keep in mind that using the percentage means:
+```math
+X \times Y\% = X \times \frac{Y}{100} \equiv X \times Y = X \times 100Y\%
+```
+
+Dont mess up thinking that 110% * 1000 is 110000, it is 1100.
+
 See [WuWa damage calculation guide](https://wutheringwaves.fandom.com/wiki/Damage)
 
 $${
@@ -27,7 +35,7 @@ Where *Base DMG* is the calculated damage of the skill alone and *Resistances* a
 It is calculated base damage. Calculated as follows:
 
 ```math
-Base DMG = Ability Attribute * \%MV
+Base DMG = Ability Attribute * \%MV + Flat DMG + \%Flat Bonus
 ```
 
 Where *Ability Attribute* is the multiplier of the displayed ability, and *%MV* is the Motion Value (The stat with which the ability scales).
@@ -42,6 +50,84 @@ See Shorekeeper's Intro Skill:
 ![Shorekeeper Intro Skill](readme_stuff/skis.png).
 
 We'll calculate the Discernment DMG. This skill has an *Ability Attribute* of 18.26%\*3 (this means 3 hits, we can assume a hit that deals \*3 damage because the optimizer calculates average damage), so let's assume an *Ability Attribute* of 54.78%. And it scales off HP, so if Shorekeeper has 1000 HP, the *Base DMG* would be 54.78% of 1000, or **547.8**.
+
+#### Flat DMG and %Flat Bonus
+No clue, assuming its constant for every character, the optimizer doensn't need to know this.
+
+According to the guide:
+> It is an amount of additional DMG which is added to Base DMG.
+
+### Resistances
+There is a whole section in the guide about resistances, but the optimizer doesn't need to know this. The optimizer only optimizes the damage output, so it doesn't need to know how the damage is reduced.
+
+### Bonuses
+The bonus multipliers are calculated as follows:
+
+```math 
+Bonuses = \%DMG Bonus \times \%DMG Amplify \times \%Special DMG \times Crit DMG Bonus
+```
+#### %DMG Bonus
+This is the sum of all the DMG bonuses, including Elemental DMG Bonuses and different Atk Bonuses. All bonuses are:
+
++ Elemental Bonuses
+    + $${\color{#36b0d0}\textbf{Glacio DMG Bonus}}$$
+    + $${\color{#c82a4b}\textbf{Fusion DMG Bonus}}$$
+    + $${\color{#aa35b5}\textbf{Electro DMG Bonus}}$$
+    + $${\color{#31c9a1}\textbf{Aero DMG Bonus}}$$
+    + $${\color{#b8a81e}\textbf{Spectro DMG Bonus}}$$
+    + $${\color{#971654}\textbf{Havoc DMG Bonus}}$$
++ Dmg Bonuses
+    + **Basic Attack DMG Bonus%**
+    + **Heavy Attack DMG Bonus%**
+    + **Resonance Skill DMG Bonus%**
+    + **Resonance Liberation DMG Bonus%**
+
+The final Bonus is calculated as follows:
+
+```math
+\%DMG Bonus = \sum_{i} \text{Bonus}_i + 100\%
+```
+There is an implicit 100% so that the damage is not less than the base damage. (If working with coefficients, this would be 1)
+
+See yinlin Outro Skill:
+
+![Yinlin Outro Skill](readme_stuff/yos.png).
+
+In this case, the incoming resonator has a bonus on their Resonance Liberation and Electro damage, so if they were Electro and did Resonance Liberation, the bonus would be 20% + 25% = 45%. so the final damage would be 145% of the base damage.
+
+#### %DMG Amplify
+Damage Amplify is displayed as **DMG Deepen** in-game. It is calculated as follows:
+
+```math
+DMG Amplify_{Total} = DMG Amplify_{Target} + DMG Amplify_{Atacker} + 100\%
+```
+There is also a deepen for enemies because it can be negative and would act as some kind of resistance, but as this number doesnt change the optimizer doesn't need to know this. Deepen may act on all damg, like Verina's Outro Skill:
+
+![Verina Outro skill](readme_stuff/vos.png)
+
+Or could act on a specific type of damage like Taoqi's Outro Skill:
+
+![Taoqi Outro Skill](readme_stuff/tos.png)
+
+Or could act on a specific element like Aalto's Outro Skill:
+
+![Aalto Outro Skill](readme_stuff/aos.png)
+
+#### %Special DMG
+Quoting the guide:
+> Special DMG is an independent multiplier which is not displayed anywhere on the in-game Character Stat page[...]
+Note that currently it is unknown as to what differentiates Special DMG from DMG Amplify, and the stat remains unused in the game.
+
+So no need to include this in the optimizer.
+
+#### Crit DMG Bonus
+In-game, a hit may crit or not crit, but the optimizer will take the average damage. This is calculated very easily:
+
+```math
+Crit DMG Bonus = Crit Rate \times Crit DMG
+```
+
+Note that in Genshin Impact, Crit damage has an implicit 100%, but not in Wuthering Waves. So reading 250% crit damage means dealing 2.5 times the damage, not 2.5 MORE damage.
 
 ## Stats
 
