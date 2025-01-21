@@ -27,7 +27,7 @@ Where *Base DMG* is the calculated damage of the skill alone and *Resistances* a
 It is calculated base damage. Calculated as follows:
 
 ```math
-Base DMG = Ability Attribute * \\%MV
+Base DMG = Ability Attribute * \%MV
 ```
 
 
