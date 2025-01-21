@@ -2,7 +2,7 @@
 
 ## Damage calculation
 
-See [wuwa-damage-calculation-guide](https://wutheringwaves.gg/damage-calculation-guide/)
+See [WuWa damage calculation guide](https://wutheringwaves.fandom.com/wiki/Damage)
 
 $${
 % colors: 
@@ -15,48 +15,20 @@ $${
 }$$
 
 
-Skill Hit:
+The damage of a hit can be calculated as follows:
 ```math
-skill\_hit = char\_stat \times char\_skill\_mult \times skill\_scaling\_bonus
-```
-where *char_stat* is the character's corresponding stat with which the skill scales, see [Skill Hit](#skill-hit)
-
-Expected Hit:
-```math
-expected\_hit = skill\_hit \times (elemental\_dmg\_bonus + skill\_dmg\_bonus) \times deepen\_effect \times (crit\_dmg \times crit\_rate)
-```
-See the difference between [damage bonuses](#dmg-bonuses) and [deepen effects](#deepen-effects)
-
-Actual Hit:
-```math
-actual\_hit = enemy\_defence\_modifier \times enemy\_elemental\_reduction
+DMG = Base DMG \times Resistances \times Bonuses
 ```
 
-We will assume monsters for Sol3 phase 8, in case they have different defence.
-The optimizer will optimize *actual_hit*, modifying all modifiers according to the characters and sets.
+Where *Base DMG* is the calculated damage of the skill alone and *Resistances* and *Bonuses* are the multipliers that affect the damage.
 
-## Modifiers
-### Skill hit
-Every skill has a corresponding stat with which it scales and a multiplier that is applied to that stat. 
-Given Spectro Rover's Resonance skill:
+### Base DMG
 
-![rover-resonance-skill](readme_stuff/srrs.png)
+It is calculated base damage. Calculated as follows:
 
-When no stat is specified, the skill scales with ATK. So this skill would have:
-+ *char_stat* = Rover's ATK
-+ *char_skill_mult* = 118.80%. (1.188)
-+ *skill_scaling_bonus* = 1.0 (We'll talk about this [later](#skill-hit))
-
-![alt text](readme_stuff/skis.png)
-
-In the Shorekeeper's intro skill, her Discernment DMG scales with her HP.  18.26% * 3 HP means 3 hits, but to practical purposes, we can consider it as a single hit with triple the damage, so the skill hit would be:
-+ *char_stat* = Shorekeeper's HP
-+ *char_skill_mult* = 18.26% * 3 = 54.78% (0.5478)
-+ *skill_scaling_bonus* = 1.0 (We'll talk about this [later](#skill-hit))
-
-### Expected Hit
-A hit base damage scaless of teh
-
+```math
+Base DMG = Ability Attribute * \\%MV
+```
 
 
 ## Stats
