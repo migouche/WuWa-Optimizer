@@ -30,6 +30,18 @@ It is calculated base damage. Calculated as follows:
 Base DMG = Ability Attribute * \%MV
 ```
 
+Where *Ability Attribute* is the multiplier of the displayed ability, and *%MV* is the Motion Value (The stat with which the ability scales).
+See Spectro Rover's Resonance Skill:
+
+![Spectro Rover Resonance Skill](readme_stuff/srrs.png).
+
+This skill has an *Ability Attribute* of 118% and it scales off ATK (if nothing is specified, it scales off ATK). If this rover had 1000 atk, the *Base DMG* would be 118% of 1000, or **1180**.
+
+See Shorekeeper's Intro Skill:
+
+![Shorekeeper Intro Skill](readme_stuff/skis.png).
+
+We'll calculate the Discernment DMG. This skill has an *Ability Attribute* of 18.26%\*3 (this means 3 hits, we can assume a hit that deals \*3 damage because the optimizer calculates average damage), so let's assume an *Ability Attribute* of 54.78%. And it scales off HP, so if Shorekeeper has 1000 HP, the *Base DMG* would be 54.78% of 1000, or **547.8**.
 
 ## Stats
 
