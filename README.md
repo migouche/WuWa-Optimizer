@@ -101,7 +101,15 @@ Damage Amplify is displayed as **DMG Deepen** in-game. It is calculated as follo
 ```math
 DMG Amplify_{Total} = DMG Amplify_{Target} + DMG Amplify_{Atacker} + 100\%
 ```
-There is also a deepen for enemies because it can be negative and would act as some kind of resistance, but as this number doesnt change the optimizer doesn't need to know this. Deepen may act on all damg, like Verina's Outro Skill:
+There is also a deepen for enemies because it can be negative and would act as some kind of resistance, but as this number doesnt change the optimizer doesn't need to know this.
+
+No guide states this, but I assume that the DMG Amplifiation provided by the target is the sum of all amplifications that can be applicable:
+
+```math	
+DMG Amplify_{Target} = \sum_{i} DMG Amplify_{i}
+```
+
+Deepen may act on all dmg, like Verina's Outro Skill:
 
 ![Verina Outro skill](readme_stuff/vos.png)
 
@@ -276,7 +284,7 @@ if the echo is not level 25 and/or there are missing roles, they will be left em
 |--------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | ![Celestial Light][celestial-light] **Celestial Light** |${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | ${\color{#b8a81e}\text{Spectro DMG +30\\%}}$ for 15s after releasing Intro Skill.                         |
 | ![Empyrean Anthem][empyrean-anthem] **Empyrean Anthem** | Energy Regen +10\\% | Increase Resonator's Coordinated Attack DMG by 80%. Upon critical hit, increase active Resonator's ATK by 20% for 4s. |
-| ![Eternal Radiance][eternal-radiance] **Eternal Radiance** | ${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | Inflicting Spectro Frazzle increases Crit. Rate by 20% for 15s. Attacking enemies with 10 stacks of Spectro Frazzle grants 15% ${\color{#b8a81e}\text{<spectro>Spectro DMG}}$ </spectro> Bonus for 15s. |
+| ![Eternal Radiance][eternal-radiance] **Eternal Radiance** | ${\color{#b8a81e}\text{Spectro DMG +10\\%}}$ | Inflicting Spectro Frazzle increases Crit. Rate by 20% for 15s. Attacking enemies with 10 stacks of Spectro Frazzle grants ${\color{#b8a81e}\text{15\\% Spectro DMG Bonus}}$ for 15s. |
 |![Freezing Frost][freezing-frost] **Freezing Frost** | ${\color{#36b0d0}\text{Glacio DMG +10\\%}}$ | ${\color{#36b0d0}\text{Glacio DMG +10\\%}}$ after releasing Basic or Heavy Attack. Stacks up to 3 times, each lasting 15s. |
 | ![Frosty Resolve][frosty-resolve] **Frosty Resolve**  | Resonance Skill DMG +12% | Casting Resonance Skill grants ${\color{#36b0d0}\text{22.5\\% Glacio DMG}}$ Bonus for 15s. Casting Resonance Liberation increases Resonance Skill DMG by 18% for 5s. Stacks up to 2 times. |
 | ![Lingering Tunes][lingering-tunes] **Lingering Tunes** | ATK +10% | While on field, ATK increases by 5% every 1.5s, stacking up to 4 times. Outro Skill DMG +60%. |
